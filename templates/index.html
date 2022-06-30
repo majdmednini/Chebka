@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chebka</title>
+    <style>body.solid {border-style: solid;}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <style type="text/css"> @media (min-width: 1200px) {
+    .container{
+        max-width: 1290px;
+    }
+}
+span { display: flex; 
+       justify-content: center }
+
+.text {
+    font-family: "Rubik", sans-serif;
+    font-size: 6em;
+    font-weight: 700;
+    color: #111c1e;
+}
+body {
+    background-color: #c9d9db;
+}
+</style>
+</head>
+<body class="solid" >
+{% load static %}
+<div class="jumbotron" style="background-color: #b3c9cc; color:#b3c9cc,min-height: 300;">
+
+{% load static %}
+<img align="left" src="{% static "logo.png" %}" alt="Chebka" style="margin-top:-25px"; height="135" width="155">
+
+    <span class="text">
+        Chebka: Latest News 
+   </span>
+</div>
+
+<center>
+   <a class="btn btn-danger btn-lg" role="button" href="http://127.0.0.1:8000/TechRadar" target="_blank" style=" font-weight: 500;font-size: 28px; border-radius: 10px; border: none; background-color: #111c1e;  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); ">Techradar</a> &nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="btn btn-primary btn-lg" role="button" href="http://127.0.0.1:8000/techcrunch" target="_blank" style="font-weight: 500;font-size: 28px; border-radius: 10px; border: none; background-color: #111c1e; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); ">Techcrunch</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="btn btn-danger btn-lg" role="button" href="http://127.0.0.1:8000/wired" target="_blank" style="font-weight: 500;font-size: 28px; border-radius: 10px; border: none; background-color: #111c1e; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);">Wired</a>
+	 &nbsp;&nbsp;&nbsp;&nbsp;
+	<a class="btn btn-primary btn-lg" role="button" href="http://127.0.0.1:8000/theverge" target="_blank" style="font-weight: 500;font-size: 28px; border-radius: 10px; border: none; background-color: #111c1e;  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);">The Verge</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-danger btn-lg" role="button" href="http://127.0.0.1:8000/thenextweb" target="_blank" style="font-weight: 500;font-size: 28px; border-radius: 10px; border: none; background-color: #111c1e; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);">The Next Web</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-primary btn-lg" role="button" href="http://127.0.0.1:8000/engadget" target="_blank" style="font-weight: 500;font-size: 28px; border-radius: 10px; border: none; background-color: #111c1e; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);">Engadget</a>
+<br>
+</center><br><br>
+<div class="container">
+  <div class="row" >
+
+{% for new, des,i,ur in mylist %}
+<div class="col-lg-4" >
+<div class="thumbnail" style="border: none; border-radius: 10px; background-color: #dee8e9;  box-shadow: 0px 8px 15px #586b6d;">
+
+<a href="{{ur}}" target="_blank" style="color: #111c1e;   text-align: center;">
+<br><h1> {{new}}</h1> <br>
+<img src="{{i}}" alt="" width="390" height="240">
+</a>
+<br><div class="caption" style="font-size: 20px;">     
+<b>Description: </b>{{des}}
+	</div>
+</div>
+</div>
+
+{% endfor %}   
+
+</div></div>
+</body>
+</html>
