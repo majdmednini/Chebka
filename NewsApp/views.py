@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from newsapi import NewsApiClient
 from django.views.decorators.cache import cache_page
+from django.views.decorators.http import require_http_methods
 
+@require_http_methods(["GET"])
 @cache_page(60*60*24)
 def index(request):
     newsapi = NewsApiClient(api_key="d82ee41695e140d78c1726d37ae3a703")
@@ -29,7 +31,7 @@ def index(request):
 
     return render(request, 'index.html', context={"mylist":mylist})
 
-
+@require_http_methods(["GET"])
 @cache_page(60*60*24)
 def TechRadar(request):
     newsapi = NewsApiClient(api_key="b0f75ce660c0466a9a98c2478f8abb62")
@@ -57,7 +59,7 @@ def TechRadar(request):
 
     return render(request, 'TechRadar.html', context={"mylist":mylist})
 
-
+@require_http_methods(["GET"])
 @cache_page(60*60*24)
 def techcrunch(request):
     newsapi = NewsApiClient(api_key="b0f75ce660c0466a9a98c2478f8abb62")
@@ -85,6 +87,7 @@ def techcrunch(request):
 
     return render(request, 'techcrunch.html', context={"mylist":mylist})
 #google-news,engadget,business-insider,wired,the-times-of-india,techcrunch,the-verge,the-next-web
+@require_http_methods(["GET"])
 @cache_page(60*60*24)
 def wired(request):
     newsapi = NewsApiClient(api_key="b0f75ce660c0466a9a98c2478f8abb62")
@@ -112,6 +115,7 @@ def wired(request):
 
     return render(request, 'wired.html', context={"mylist":mylist})
 
+@require_http_methods(["GET"])
 @cache_page(60*60*24)
 def theverge(request):
     newsapi = NewsApiClient(api_key="b0f75ce660c0466a9a98c2478f8abb62")
@@ -139,6 +143,7 @@ def theverge(request):
 
     return render(request, 'theverge.html', context={"mylist":mylist})
 
+@require_http_methods(["GET"])
 @cache_page(60*60*24)
 def thenextweb(request):
     newsapi = NewsApiClient(api_key="b0f75ce660c0466a9a98c2478f8abb62")
@@ -166,6 +171,7 @@ def thenextweb(request):
 
     return render(request, 'thenextweb.html', context={"mylist":mylist})
 
+@require_http_methods(["GET"])
 @cache_page(60*60*24)
 def engadget(request):
     newsapi = NewsApiClient(api_key="b0f75ce660c0466a9a98c2478f8abb62")
