@@ -5,9 +5,9 @@ from django.views.decorators.http import require_http_methods
 
 @require_http_methods(["GET"])
 @cache_page(60*60*24)
-def index(request):
+def index(request, src):
     newsapi = NewsApiClient(api_key="d82ee41695e140d78c1726d37ae3a703")
-    topheadlines = newsapi.get_top_headlines()
+    topheadlines = newsapi.get_top_headlines(source = src)
     articles = topheadlines['articles']
 
     desc = []
