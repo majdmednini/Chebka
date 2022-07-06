@@ -8,6 +8,9 @@
     <img src="NewsApp/static/logo.jpg" alt="Logo" width="80" height="80">
     </a>
 
+* #### introduction:
+        * in the age of information you have to equip yourself with a content aggregator that keeps you on top of your game
+        * 
 ### Team:
 #### Team members:
 Saif Gaida
@@ -35,18 +38,19 @@ currently the site is not hosted online so to run an instance of it locally run:
 ```shell 
 $python3 runserver
 ```
-# currently conencts on port 8000 so make sure nothing is running on it
+**currently conencts on port 8000 so make sure nothing is running on it**
 
+# ✍️ Contributing
+Interested in contributing to the Well app project? Thanks so much for your interest! We are always looking for improvements to the project and contributions from open-source developers are greatly appreciated.
+
+If you have a contribution in mind, please contact one oft the authors of the repo
 
 #### Technologies:
 
-Libraries: Django~=3.2.7  - requests~=2.26.0 - bs4~=0.0.1 -Scrapy~=2.6.2 - requests-html~=0.10.0
-Languages: Python - HTML - CSS - JavaScript
-Platform: AWS
-Frameworks: Django
+[requiremetns.txt](https://github.com/threadsv1/Chebka/blob/main/requirements.txt)
 Resources: Geeksforgeeks - w3schools - djangoproject - developer mozilla - realpython - cpske github
 IDE: Visual Studio Code
-Alternatives: Django can be substituted with flask and scrapy already replaced beautiful soup  being the most popular popular web scraping library, also great for scraping RSS feeds  also sql might be replaced with mongo 
+Alternatives: Django can be substituted with flask library,  newsapi with newspaper
 
 #### Challenge:
 “Chebka” will try to bring the most relevant, hottest content  in a single web page, easy to navigate, energy and attention saving, because there is just “Too Much choice” ; however due to overwhelming  amounts of content we have to acknowledge that without a machine learning model imbricated within the django framework  Personalization levels will be a little off-putting, so Chebka will not tackle the personalization  the targeted users are primarily software developers who want to be served the latest news and tutorials pertaining to their stacks
@@ -61,13 +65,6 @@ An apparent technical risk is traffic congestion, so a strict bandwidth limit is
 A non technical risk is a a somewhat of a moral hazard towards publishers where they might not grant us rights to publish their content for profit in a later stage
 Spreading poor content is another problem but measures can be taken to prevent that
 
-#### Infrastructure:
-Branching strategy: since we are an army of two and Chebka doesn’t have many features in this early stage, we think that we would not even reside to branching so Trunk based committing is the name of the game
-Deployment: Blue-Green Deployment
-Testing: factory_boy (factory_boy provides custom Factory subclasses for various ORMs, adding dedicated features.)
-Data population: faker
-Deployment:  nginx and Gunicorn
-- the Django project is ought to be developed first with the core features such as web scraping and views and models, then the front end and linking it to the main django application
 
 #### Related Projects:
 [newspaper : Newspaper3k Article scraping & curation](https://github.com/mattlisiv/newsapi-python) :newspaper:
@@ -81,3 +78,4 @@ alltop:  ui design is uninspiring and off putting so we try  to keep away from t
 news google: great overall on web and especially mobile
 
 #### Licensing:
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
