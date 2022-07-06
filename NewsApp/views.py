@@ -22,6 +22,14 @@ def index(request, src):
 
     for i in range(len(articles)):
         article = articles[i]
+<<<<<<< HEAD
+=======
+
+        news.append(article['title'])
+        desc.append(article['description'])
+        img.append(article['urlToImage'])
+        url.append(article['url'])
+>>>>>>> 1aee876 (spruce up var names)
 
         news.append(article['title'])
         desc.append(article['description'])
