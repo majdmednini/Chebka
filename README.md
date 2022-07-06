@@ -26,11 +26,11 @@ Cohort #16
 
 #### CLI Installation
 ```shell 
-$git clone  https://github.com/threadsv1/Chebka/tree/django-cache
-$cd  Chebka
-$pip install -r requirements.txt
-$python manage.py makemigrations
-$python manage.py migrate
+$ git clone  https://github.com/threadsv1/Chebka/tree/django-cache
+$ cd  Chebka
+$ pip install -r requirements.txt
+$ python manage.py makemigrations
+$ python manage.py migrate
 ```
 
 #### Usage:
