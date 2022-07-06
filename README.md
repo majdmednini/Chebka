@@ -20,9 +20,9 @@ Cohort #16
 ##### Back-end:
  Saif is responsible for Integration of user-facing elements developed by front-end developer with server side logic, and trying to introduce security methods
  
-<p align="center">
+
 <iframe src="https://giphy.com/embed/WqdoGlanBKE9q9x4BF" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/abcnetwork-WqdoGlanBKE9q9x4BF">via GIPHY</a></p>
-</p>
+
 
 #### CLI Installation
 ```shell 
