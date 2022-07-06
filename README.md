@@ -9,9 +9,9 @@
     <img src="NewsApp/static/logo.jpg" alt="Logo"  width="500" height="600">
     </a>
 
-* #### introduction:
-        * in the age of information you have to equip yourself with a content aggregator that keeps you on top of your game
-        * 
+#### introduction:
+    >>> in the age of information you have to equip yourself with a content aggregator that keeps you on top of your game
+        so we decided to try to make a little tool that will ease  access to content from various sources
 ### Team:
 #### Team members:
 Saif Gaida
