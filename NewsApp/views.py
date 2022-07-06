@@ -3,6 +3,10 @@ from newsapi import NewsApiClient
 from django.views.decorators.cache import cache_page
 from django.views.decorators.http import require_http_methods
 
+#ran into problems with rebase while trying to make commits more meaningful
+#this helped
+#https://stackoverflow.com/questions/13106179/fatal-not-possible-to-fast-forward-aborting
+
 #permit only get methods to prevent http header attacks 
 @require_http_methods(["GET"])
 #cache the page for a day in seconds
