@@ -16,12 +16,12 @@ def index(request, src):
     url = []
 
     for i in range(len(articles)):
-        a = articles[i]
+        article = articles[i]
 
-        news.append(a['title'])
-        desc.append(a['description'])
-        img.append(a['urlToImage'])
-        url.append(a['url'])
+        news.append(article['title'])
+        desc.append(article['description'])
+        img.append(article['urlToImage'])
+        url.append(article['url'])
 
 
     mylist = zip(news, desc, img, url)
