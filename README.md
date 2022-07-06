@@ -4,8 +4,9 @@
 
 ---
 <!-- PROJECT LOGO -->
+<p align
  <a href="https://github.com/threadsv1/Chebka/tree/django-cache">
-    <img src="NewsApp/static/logo.jpg" alt="Logo" width="80" height="80">
+    <img src="NewsApp/static/logo.jpg" alt="Logo"  width="500" height="600">
     </a>
 
 * #### introduction:
