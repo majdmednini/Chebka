@@ -20,9 +20,9 @@ Cohort #16
 ##### Back-end:
  Saif is responsible for Integration of user-facing elements developed by front-end developer with server side logic, and trying to introduce security methods
  
-
-<iframe src="https://giphy.com/embed/WqdoGlanBKE9q9x4BF" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/abcnetwork-WqdoGlanBKE9q9x4BF">via GIPHY</a></p>
-
+<a href="https://github.com/threadsv1/Chebka/tree/django-cache">
+ <img src="https://media4.giphy.com/media/WqdoGlanBKE9q9x4BF/giphy.gif?cid=790b76114993f999e1c88b2a16f6f282c7c3971a930f9e2e&rid=giphy.gif&ct=g">
+</a>
 
 #### CLI Installation
 ```shell 
