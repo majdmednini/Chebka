@@ -6,7 +6,9 @@ from django.views.decorators.http import require_http_methods
 #permit only get methods to prevent http header attacks 
 @require_http_methods(["GET"])
 #cache the page for a day in seconds
+#updating the content will be done through django-apsscheuler
 @cache_page(60*60*24)
+#make the app adaptive to user needs
 def index(request, src):
     newsapi = NewsApiClient(api_key="d82ee41695e140d78c1726d37ae3a703")
     topheadlines = newsapi.get_top_headlines(source = src)
